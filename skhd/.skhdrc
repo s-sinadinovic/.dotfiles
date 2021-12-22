@@ -77,7 +77,9 @@
 # ############################################################### #
 
 # open terminal
-cmd - return : /Applications/iTerm.app/Contents/MacOS/iterm2
+# cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+cmd - return : /Applications/iTerm.app/Contents/MacOS/iterm2 
+# cmd - return : xterm
 
 # WINDOW MANAGEMENT
 # move focus between windows
@@ -99,37 +101,40 @@ shift + cmd - k : yabai -m window --warp north
 shift + cmd - l : yabai -m window --warp east
 
 # move window to new space
-shift + cmd - 1 : yabai -m window --space 1
-shift + cmd - 2 : yabai -m window --space 2
-shift + cmd - 3 : yabai -m window --space 3
-shift + cmd - 4 : yabai -m window --space 4
+shift + alt - 1 : yabai -m window --space 1
+shift + alt - 2 : yabai -m window --space 2
+shift + alt - 3 : yabai -m window --space 3
+shift + alt - 4 : yabai -m window --space 4
+shift + alt - 5 : yabai -m window --space 5
+shift + alt - 6 : yabai -m window --space 6
 
 # toggle window split type
 alt - e : yabai -m window --toggle split
 
-# SPACE MANAGEMeNT
+# SPACE MANAGEMENT
 # create space on the active display
- 
+shift + alt - n : yabai -m space --create
 
 # delete focused space and focus first space on display
+shift + alt - x : yabai -m space --destroy
 
 # move focus between spaces
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
 alt - 3 : yabai -m space --focus 3
 alt - 4 : yabai -m space --focus 4
-
-
-
-
-
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+ 
 # toggle window fullscreen
 alt - f : yabai -m window --toggle native-fullscreen
 
-
+# float / unfloat window and center on screen
+shift + alt - space : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
 
 # balance size of windows
-# shift + alt - 0 : yabai -m space --balance
+shift + alt - 0 : yabai -m space --balance
 
 # make floating window fill screen
 # shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
@@ -177,10 +182,6 @@ alt - f : yabai -m window --toggle native-fullscreen
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent
 # alt - f : yabai -m window --toggle zoom-fullscreen
-
-# float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
 
 # toggle sticky(+float), topmost, picture-in-picture
 # alt - p : yabai -m window --toggle sticky;\
