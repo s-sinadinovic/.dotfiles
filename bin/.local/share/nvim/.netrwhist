@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/samuelsinadinovic/.config/kitty'
+let g:netrw_dirhist_1='/Users/samuelsinadinovic/.config'
+let g:netrw_dirhist_0='/Users/samuelsinadinovic/.dotfiles'
 let g:netrw_dirhist_9='/Users/samuelsinadinovic/.dotfiles/kitty/.config/kitty'
 let g:netrw_dirhist_8='/Users/samuelsinadinovic'
 let g:netrw_dirhist_7='/Users/samuelsinadinovic/personal/mazes/node_modules'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_6='/Users/samuelsinadinovic/personal/mazes'
 let g:netrw_dirhist_5='/Users/samuelsinadinovic/personal/tmp/rust-1.51-workshop/part2'
 let g:netrw_dirhist_4='/Users/samuelsinadinovic/personal/tmp/rust-1.51-workshop/part1'
 let g:netrw_dirhist_3='/Users/samuelsinadinovic/personal/rust-book/projects/variables/src'
-let g:netrw_dirhist_2='/Users/samuelsinadinovic/personal/rust-book/projects/variables'
-let g:netrw_dirhist_1='/Users/samuelsinadinovic/personal/rust-book/projects/variables/src'
-let g:netrw_dirhist_0='/Users/samuelsinadinovic/personal/rust-book/projects/variables'
