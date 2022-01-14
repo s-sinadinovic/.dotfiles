@@ -130,7 +130,7 @@ alt - 6 : yabai -m space --focus 6
 alt - f : yabai -m window --toggle native-fullscreen
 
 # float / unfloat window and center on screen
-shift + alt - space : yabai -m window --toggle float;\
+alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
 
 # balance size of windows

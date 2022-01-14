@@ -1,0 +1,42 @@
+# include other.conf
+
+# FONTS
+font_family      Operator Mono Book 
+bold_font        Operator Mono Bold 
+italic_font      Operator Mono Book Italic 
+bold_italic_font Operator Mono Bold Italic 
+
+font_size 12 
+
+disable_ligatures never
+
+# COLORS
+# black
+color0 #000000
+color8 #69696e 
+# red
+color1 #d70015
+color9 #ff6961
+# green
+color2  #007d1b
+color10 #31de4b
+# yellow
+color3  #a05b00
+color11 #ffd426
+# blue
+color4  #0040dd  
+color12 #409cff 
+# magenta
+color5  #ad44ab
+color13 #da8fff
+# cyan
+color6  #ffffff
+color14 #ffffff
+#color6  #0c817b 
+#color14 #66d4cf 
+# white
+color7  #ffffff
+color15 #98989d
+
+background #161618
+
