@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/samuelsinadinovic/.dotfiles/zsh'
+let g:netrw_dirhist_2='/Users/samuelsinadinovic/.dotfiles'
+let g:netrw_dirhist_1='/Users/samuelsinadinovic/.dotfiles/zsh'
+let g:netrw_dirhist_0='/Users/samuelsinadinovic/.dotfiles'
 let g:netrw_dirhist_9='/Users/samuelsinadinovic/.dotfiles/zsh'
 let g:netrw_dirhist_8='/Users/samuelsinadinovic/.dotfiles'
 let g:netrw_dirhist_7='/Users/samuelsinadinovic/ansible/tasks'
 let g:netrw_dirhist_6='/Users/samuelsinadinovic/ansible'
 let g:netrw_dirhist_5='/Users/samuelsinadinovic/.dotfiles/zsh'
 let g:netrw_dirhist_4='/Users/samuelsinadinovic/personal/mazes/src/lib'
-let g:netrw_dirhist_3='/Users/samuelsinadinovic/personal/mazes/src'
-let g:netrw_dirhist_2='/Users/samuelsinadinovic/personal/mazes/src/lib'
-let g:netrw_dirhist_1='/Users/samuelsinadinovic/personal/mazes/src'
-let g:netrw_dirhist_0='/Users/samuelsinadinovic/personal/mazes/src/lib'
