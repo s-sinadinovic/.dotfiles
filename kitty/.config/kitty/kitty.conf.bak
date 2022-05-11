@@ -1222,7 +1222,7 @@ term xterm-kitty
 #: system means to use the default system , a value of background
 #: means to use the background  of the currently active window
 #: and finally you can use an arbitrary , such as #12af59 or red.
-macos_titlebar_color #0e1419 
+macos_titlebar_color #2e3440 
 
 hide_window_decorations no
 
@@ -2016,6 +2016,6 @@ map opt+cmd+,    debug_config
 
 
 # BEGIN_KITTY_THEME
-# Ayu
+# Nord
 include current-theme.conf
 # END_KITTY_THEME
