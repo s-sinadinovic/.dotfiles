@@ -112,14 +112,19 @@ require('lazy').setup({
     },
   },
 
-  { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
+  -- { -- Theme inspired by Atom
+  --   'navarasu/onedark.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'onedark'
+  --   end,
+  -- }
+  {
+    'catppuccin/nvim', as = 'catppuccin',
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme "catppuccin-macchiato"
     end,
   },
-
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
@@ -186,7 +191,7 @@ require('lazy').setup({
   --
   --    An additional note is that if you only copied in the `init.lua`, you can just comment this line
   --    to get rid of the warning telling you that there are not plugins in `lua/custom/plugins/`.
-  { import = 'custom.plugins' },
+--   { import = 'custom.plugins' },
 }, {})
 
 -- [[ Setting options ]]
