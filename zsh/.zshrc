@@ -82,6 +82,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5b6078"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export TERM=xterm-256color
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -101,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+alias vi="nvim"
+alias vim="nvim"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
