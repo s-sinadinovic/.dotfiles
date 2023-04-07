@@ -42,6 +42,8 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.opt.relativenumber = true
+
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -231,6 +233,9 @@ vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
+
+-- Set LSP diagnostics border
+vim.diagnostic.config{ float = { border = "rounded" }, }
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
@@ -442,6 +447,11 @@ require('mason').setup()
 -- Ensure the servers above are installed
 local mason_lspconfig = require 'mason-lspconfig'
 
+local handlers = {
+  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, { border = 'rounded' }),
+  ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, { border = 'rounded' }),
+}
+
 mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
 }
@@ -450,6 +460,7 @@ mason_lspconfig.setup_handlers {
   function(server_name)
     require('lspconfig')[server_name].setup {
       capabilities = capabilities,
+      handlers = handlers,
       on_attach = on_attach,
       settings = servers[server_name],
     }
@@ -500,6 +511,11 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'path' },
+  },
+  experimental = {
+    native_menu = false,
+    ghost_text = true,
   },
 }
 
