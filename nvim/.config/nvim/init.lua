@@ -375,10 +375,21 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- Diagnostic keymaps
+local diagnostics_active = true
+local toggle_diagnostics = function()
+  diagnostics_active = not diagnostics_active
+  if diagnostics_active then
+    vim.diagnostic.show()
+  else
+    vim.diagnostic.hide()
+  end
+end
+
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
+vim.keymap.set('n', '<leader>td', toggle_diagnostics, { desc = "[T]oggle [D]iagnostics"})
 
 -- LSP settings.
 --  This function gets run when an LSP connects to a particular buffer.
