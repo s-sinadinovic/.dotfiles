@@ -95,7 +95,7 @@ require('lazy').setup({
   {
     'catppuccin/nvim', as = 'catppuccin',
     config = function()
-      vim.cmd.colorscheme "catppuccin-macchiato"
+      vim.cmd.colorscheme "catppuccin-mocha"
     end,
   },
   { -- Set lualine as statusline
