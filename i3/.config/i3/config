@@ -15,6 +15,9 @@ default_floating_border pixel 1
 # is used in the bar {} block below.
 font pango:monospace 8
 
+gaps inner 16px
+gaps outter 16px
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -203,6 +206,8 @@ bar {
         status_command i3status
 }
 
+
+
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
@@ -213,4 +218,4 @@ bar {
 #
 # Please remove the following exec line:
 #######################################################################
-exec i3-config-wizard
+#exec i3-config-wizard
